@@ -74,7 +74,9 @@
 
   function  removeTransition(e){
 
-    console.log(e);
+    if(e.propertyName !== 'transition') return; // skip if not a transition
+
+    console.log(e.propertyName);
   }
 
 
