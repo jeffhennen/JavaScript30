@@ -61,7 +61,8 @@
 
   window.addEventListener('keydown', function(e){
 
-    console.log(e.keyCode);
+    const audio = document.queryselector('audio[data-key = "${e.keyCode}"]')
+    console.log(audio);
 
   });
 
